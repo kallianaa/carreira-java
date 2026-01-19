@@ -3,25 +3,20 @@ import java.util.Scanner;
 public class Teste {
     void main (){
 
-            Scanner entrada = new Scanner(System.in);
-
-            int quantidadeNotas = 0;
-            double nota = 0;
-            double total = 0;
-
-            while (nota != -1){
-                System.out.println("Digite uma nota ou -1 para sair: ");
-                nota = entrada.nextDouble();
-
-                if(nota <= 10 && nota >= 0){
-                    total += nota;
-                    quantidadeNotas++;
-                }
-            }
-
-            double media = total / quantidadeNotas;
-            System.out.println("A média das notas é: " + media);
-
-            entrada.close();
+        System.out.println("============================");
+        double[] carrinhoDeCompras
+                = new double[] { 57.0, 175.0, 25.0, 10.0 };
+        double valorTotalDoCarrinho = 0.0;
+        for (int i = 0; i < carrinhoDeCompras.length; i++) {
+            valorTotalDoCarrinho += carrinhoDeCompras[i];
+            System.out.println(">>>> Iteração " + i);
+            System.out.println(">> Valor do produto corrente R$"
+                    + carrinhoDeCompras[i] + ".");
+            System.out.println(">> O total parcial é de R$"
+                    + valorTotalDoCarrinho + ".");
+        }
+        System.out.println("O valor total é:" + valorTotalDoCarrinho);
+        System.out.println("Fim!");
+        System.out.println("============================");
     }
 }
