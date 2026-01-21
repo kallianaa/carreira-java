@@ -7,6 +7,7 @@ public class Main  {
             System.out.printf("[%d %d]", i, j);
         }
         System.out.println();
+        System.out.println("============================");
     }
   }
 }
