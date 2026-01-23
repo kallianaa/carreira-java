@@ -9,7 +9,7 @@ public class Teste {
                 = new double[] { 57.0, 175.0, 25.0, 10.0 };
 
         double valorTotalDoCarrinho = 0.0;
-        
+
         for (int i = 0; i < carrinhoDeCompras.length; i++) {
             valorTotalDoCarrinho += carrinhoDeCompras[i];
             System.out.println(">>>> Iteração " + i);
